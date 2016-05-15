@@ -1,9 +1,5 @@
 //
-//  AppDelegate.swift
-//  WorldTrotter
-//
-//  Created by Derek Pacula on 5/12/16.
-//  Copyright © 2016 Derek Pacula. All rights reserved.
+//  Copyright © 2015 Big Nerd Ranch
 //
 
 import UIKit
