@@ -1,6 +1,4 @@
-//
-//  Copyright © 2015 Big Nerd Ranch
-//
+// Derek Mobile Design
 
 import UIKit
 
