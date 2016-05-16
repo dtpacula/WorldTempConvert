@@ -7,6 +7,35 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var celsiusLabel: UILabel!
     @IBOutlet var textField: UITextField!
     
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        print("ConversionVIewController Loaded")
+    }
+    
+    
+    //Changes the UI color the app to black if the time is after 8pm local time
+    override func viewWillAppear(animated: Bool) {
+        
+        let date = NSDate()
+        let calendar = NSCalendar.currentCalendar()
+        let components = calendar.components([ .Hour, .Minute, .Second], fromDate: date)
+        let hour = components.hour
+        
+        print("hour: \(hour)")
+        
+        if hour > 19
+        {
+            UINavigationBar.appearance().tintColor = UIColor.blackColor()
+            tabBarController!.tabBar.barTintColor = UIColor.blackColor()
+        }
+        
+        
+
+        
+        
+    }
+    
     var fahrenheitValue: Double? {
         didSet {
             updateCelsiusLabel()
