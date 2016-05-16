@@ -22,17 +22,12 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         let components = calendar.components([ .Hour, .Minute, .Second], fromDate: date)
         let hour = components.hour
         
-        print("hour: \(hour)")
         
-        if hour > 19
+        if hour > 19 || hour < 7
         {
             UINavigationBar.appearance().tintColor = UIColor.blackColor()
-            tabBarController!.tabBar.barTintColor = UIColor.blackColor()
+            tabBarController!.tabBar.barTintColor = UIColor.blackColor().colorWithAlphaComponent(0.25)
         }
-        
-        
-
-        
         
     }
     

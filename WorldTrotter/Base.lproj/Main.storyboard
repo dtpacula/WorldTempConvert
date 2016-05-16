@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QLc-Eo-QCT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F31a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QLc-Eo-QCT">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -75,6 +75,7 @@
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Convert" image="ConvertIcon" id="74F-Yu-8ME"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="celsiusLabel" destination="XU5-kP-97a" id="d0M-9Z-nbJ"/>
                         <outlet property="textField" destination="nEB-A3-sAJ" id="iRg-Dr-1hZ"/>
@@ -93,28 +94,50 @@
         <scene sceneID="SVF-PT-Nyr">
             <objects>
                 <viewController id="UGt-Kt-7oG" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="ENP-rA-dDc">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </mapView>
                     <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="3yd-hT-BB1"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vpc-3e-yfx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2062" y="316"/>
+            <point key="canvasLocation" x="2084" y="-82"/>
+        </scene>
+        <!--Web-->
+        <scene sceneID="zdL-tJ-CdC">
+            <objects>
+                <viewController title="Web" id="icH-9M-Ngt" customClass="WebViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qU0-Da-0Gk"/>
+                        <viewControllerLayoutGuide type="bottom" id="EC1-60-9zF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GUD-6R-b9P">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Web" id="rrQ-ik-I1t"/>
+                    <connections>
+                        <outlet property="containerView" destination="GUD-6R-b9P" id="EY4-nV-DVW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E94-bQ-e8V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2134" y="889"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ynA-qU-bmw">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="QLc-Eo-QCT" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="CHi-mc-sw4">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="kHo-Pf-SMi"/>
                         <segue destination="UGt-Kt-7oG" kind="relationship" relationship="viewControllers" id="n5M-Yy-Qp2"/>
+                        <segue destination="icH-9M-Ngt" kind="relationship" relationship="viewControllers" id="Jgt-6s-VKo"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oo9-7J-zHc" userLabel="First Responder" sceneMemberID="firstResponder"/>

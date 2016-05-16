@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65C0594F1CEA16460089C9CD /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C0594E1CEA16460089C9CD /* WebViewController.swift */; };
 		65C6213A1CE6686300003C5C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C621391CE6686300003C5C /* MapKit.framework */; };
 		65E9C2961CE8BFD9006E244B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9C2951CE8BFD9006E244B /* MapViewController.swift */; };
 		6BB4AB441B7A5D4200967615 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB4AB431B7A5D4200967615 /* AppDelegate.swift */; };
@@ -34,10 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65C0594B1CE9F9290089C9CD /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65C0594C1CE9F9290089C9CD /* WorldTrotterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = WorldTrotterTests.xctest; path = "/Users/Derek/Developer/WorldTrotter/build/Debug-iphoneos/WorldTrotterTests.xctest"; sourceTree = "<absolute>"; };
+		65C0594D1CE9F9290089C9CD /* WorldTrotterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = WorldTrotterUITests.xctest; path = "/Users/Derek/Developer/WorldTrotter/build/Debug-iphoneos/WorldTrotterUITests.xctest"; sourceTree = "<absolute>"; };
+		65C0594E1CEA16460089C9CD /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		65C621391CE6686300003C5C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		65E9C2921CE8BB51006E244B /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = WorldTrotter.app; path = "/Users/Derek/Developer/WorldTempConvert/build/Debug-iphoneos/WorldTrotter.app"; sourceTree = "<absolute>"; };
-		65E9C2931CE8BB51006E244B /* WorldTrotterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = WorldTrotterTests.xctest; path = "/Users/Derek/Developer/WorldTempConvert/build/Debug-iphoneos/WorldTrotterTests.xctest"; sourceTree = "<absolute>"; };
-		65E9C2941CE8BB51006E244B /* WorldTrotterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = WorldTrotterUITests.xctest; path = "/Users/Derek/Developer/WorldTempConvert/build/Debug-iphoneos/WorldTrotterUITests.xctest"; sourceTree = "<absolute>"; };
 		65E9C2951CE8BFD9006E244B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		6BB4AB431B7A5D4200967615 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BB4AB481B7A5D4200967615 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			children = (
 				65C621391CE6686300003C5C /* MapKit.framework */,
 				6BB4AB421B7A5D4200967615 /* WorldTrotter */,
+				65C0594B1CE9F9290089C9CD /* WorldTrotter.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +90,7 @@
 				6BB4AB711B7BD4C500967615 /* ConversionViewController.swift */,
 				6BB4AB431B7A5D4200967615 /* AppDelegate.swift */,
 				6BB4AB471B7A5D4200967615 /* Main.storyboard */,
+				65C0594E1CEA16460089C9CD /* WebViewController.swift */,
 				65E9C2951CE8BFD9006E244B /* MapViewController.swift */,
 				6BB4AB4A1B7A5D4200967615 /* Assets.xcassets */,
 				6BB4AB4C1B7A5D4200967615 /* LaunchScreen.storyboard */,
@@ -112,7 +116,7 @@
 			);
 			name = WorldTrotter;
 			productName = WorldTrotter;
-			productReference = 65E9C2921CE8BB51006E244B /* WorldTrotter.app */;
+			productReference = 65C0594B1CE9F9290089C9CD /* WorldTrotter.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6BB4AB531B7A5D4200967615 /* WorldTrotterTests */ = {
@@ -130,7 +134,7 @@
 			);
 			name = WorldTrotterTests;
 			productName = WorldTrotterTests;
-			productReference = 65E9C2931CE8BB51006E244B /* WorldTrotterTests.xctest */;
+			productReference = 65C0594C1CE9F9290089C9CD /* WorldTrotterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		6BB4AB5E1B7A5D4200967615 /* WorldTrotterUITests */ = {
@@ -148,7 +152,7 @@
 			);
 			name = WorldTrotterUITests;
 			productName = WorldTrotterUITests;
-			productReference = 65E9C2941CE8BB51006E244B /* WorldTrotterUITests.xctest */;
+			productReference = 65C0594D1CE9F9290089C9CD /* WorldTrotterUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -158,7 +162,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = "Big Nerd Ranch";
+				ORGANIZATIONNAME = "Derek Mobile Design";
 				TargetAttributes = {
 					6BB4AB3F1B7A5D4200967615 = {
 						CreatedOnToolsVersion = 7.0;
@@ -229,6 +233,7 @@
 				6BB4AB721B7BD4C500967615 /* ConversionViewController.swift in Sources */,
 				65E9C2961CE8BFD9006E244B /* MapViewController.swift in Sources */,
 				6BB4AB441B7A5D4200967615 /* AppDelegate.swift in Sources */,
+				65C0594F1CEA16460089C9CD /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +372,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = WorldTrotter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -381,6 +387,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = WorldTrotter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
